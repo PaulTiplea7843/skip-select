@@ -45,7 +45,7 @@ function App() {
   }, []);
 
   return (
-    <div>
+    <div className="pb-12 sm:pb-0">
       <div className="header text-center mt-4 flex items-center">
         <div className="flex-1">
           <h1 className="text-red-500 font-bold text-2xl">
