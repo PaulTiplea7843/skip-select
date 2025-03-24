@@ -25,7 +25,6 @@ const Card = React.memo(({ item, isSelected, onSelect }) => {
 
         <Button
           text={`Select for ${item.price_before_vat}$/week`}
-          onClick={onSelect}
           isSelected={isSelected}
         />
       </div>
