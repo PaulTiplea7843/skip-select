@@ -1,19 +1,20 @@
 import React from "react";
 import Button from "./Button";
+import skipImage from "../assets/cardImage.jpeg";
 
 const Card = React.memo(({ item, isSelected, onSelect }) => {
   return (
     <div
-      className={`card rounded-lg cursor-pointer transition-all ${
+      className={`card rounded-lg cursor-pointer transition-all  duration-300 hover:scale-105 hover:border-2 border-blue-700 ${
         isSelected
-          ? "bg-green-100 drop-shadow-xl ring-1 ring-blue-400"
+          ? "bg-green-100 drop-shadow-xl ring-1 ring-blue-400 hover:border-green-500"
           : "bg-blue-300"
       }`}
       onClick={onSelect}
     >
       <div className="content p-4 text-center">
         <img
-          src="https://images.unsplash.com/photo-1590496793929-36417d3117de?q=80&w=800"
+          src={skipImage}
           alt={`${item.size} Yard Skip`}
           className="w-full h-auto rounded-lg"
           loading="lazy"
